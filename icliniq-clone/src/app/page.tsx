@@ -1,8 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { Header } from '@/components/layout/Header';
-import { Footer } from '@/components/layout/Footer';
 import { SearchFilters } from '@/components/doctors/SearchFilters';
 import { DoctorsList } from '@/components/doctors/DoctorsList';
 import { Sidebar } from '@/components/sidebar/Sidebar';
@@ -20,8 +18,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
-
       <main className="flex-grow bg-[#f9f9f9] py-6">
         <div className="icliniq-container">
           {/* Search section */}
@@ -43,8 +39,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }
